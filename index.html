@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="style.css">
+    <title>electro</title>
+  </head>
+  <body>
+    <select name="function" id="function">
+      <option value="IEEE" >IEEE</option>
+      <option value="IEC">IEC</option>
+    </select>
+    <select name="inverse" id="inverse">
+      <option value="Very">Very inverse</option>
+      <option value="Mod">Moderately inverse</option>
+      <option value="Extreme">Extremely inverse</option>
+      <option value="Standard" disabled>Standard inverse</option>
+      <option value="Longtime" disabled>Long time standard inverse</option>
+    </select>
+    Time Dial
+    <input type="number" id="timeDial" value=2.7>
+    <h1 id="header">Press Enter to Start</h1>
+    <canvas id="myCanvas"></canvas>
+    <div>
+      <table>
+        <tr>
+          <th>Point_1</th>
+          <th>Point_2</th>
+          <th>Point_3</th>
+          <th>Point_4</th>
+          <th>Point_5</th>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td><input type="number" class="value"></td>
+          <td><input type="number" class="value"></td>
+          <td><input type="number" class="value"></td>
+          <td><input type="number" class="value"></td>
+          <td><input type="number" class="value"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="myChart.js"></script>
+  </body>
+  </html>
